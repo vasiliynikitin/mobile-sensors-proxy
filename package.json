@@ -1,0 +1,16 @@
+{
+  "name": "mobile-sensors-proxy",
+  "version": "1.0.0",
+  "description": "Package provides socket server middleware and components for mobile and desktop pages",
+  "main": "index.js",
+  "scripts": {
+    "start": "node example",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}

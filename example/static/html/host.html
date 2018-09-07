@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Example Host</title>
+    <style>
+        html {
+          font-family: arial;
+          font-size: 12px;
+          line-height: 18px;
+        }
+        .status {
+          background: #f9f9ff;
+          border: 1px solid #ccc;
+          padding: 5px;
+          margin-bottom: 10px;
+        }
+        code {
+          border: 1px solid #999;
+          padding: 0 3px;
+          border-radius: 3px;
+          background: rgba(0,0,0,.1);
+        }
+        .messages {
+          border-top: 1px dashed #ccc;
+        }
+        .messages div {
+          border-bottom: 1px dashed #ccc;
+        }
+        .canvas {
+          display: inline-block;
+          position: relative;
+          line-height: 0;
+        }
+        .progress {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0,0,0,0.6);
+          line-height: 0;
+        }
+        .bar {
+          line-height: 1;
+          width: 33%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          height: 3px;
+          background: #333;
+        }
+        .bar__tick {
+          width: 0;
+          height: 100%;
+          background: #37d122;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="status">Loading...</div>
+    <div class="messages"></div>
+    <div class="canvas">
+      <div class="progress">
+          <div class="bar"><div class="bar__tick"></div></div>
+      </div>
+      <canvas width="400" height="300" />
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/95/three.js"></script>
+    <script src="/js/threejs/loaders/objloader.js"></script>
+    <script src="/js/threejs/loaders/mtlloader.js"></script>
+    <script src="/js/threejs/loaders/ddsloader.js"></script>
+    <script src="/js/d3.js"></script>
+    <script src="/js/host.js"></script>
+  </body>
+</html>
